@@ -1,0 +1,50 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@pinia-plugin-persistedstate/nuxt": "^1.1.1",
+    "@types/color": "^3.0.3",
+    "@types/colors": "^1.2.1",
+    "@types/js-cookie": "^3.0.3",
+    "@types/vue-barcode-reader": "^0.0.0",
+    "nuxt": "^3.2.3"
+  },
+  "dependencies": {
+    "@formatjs/intl-numberformat": "^8.7.0",
+    "@mdi/font": "^7.1.96",
+    "@nuxtjs/cloudinary": "^2.3.1",
+    "@pinia/nuxt": "^0.4.7",
+    "axios": "^1.3.4",
+    "chart.js": "^4.3.0",
+    "color": "^4.2.3",
+    "html2pdf.js": "^0.10.1",
+    "js-cookie": "^3.0.1",
+    "jsbarcode": "^3.11.5",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.5.31",
+    "jspdf-html2canvas": "^1.4.9",
+    "laravel-echo": "^1.15.2",
+    "material-design-icons-light": "^3.0.1",
+    "nuxt-sanctum-auth": "^0.3.2",
+    "pinia": "^2.0.33",
+    "print-js": "^1.6.0",
+    "pusher-js": "^8.3.0",
+    "sass": "^1.58.3",
+    "vue-barcode-reader": "^1.0.3",
+    "vue-chartjs": "^5.2.0",
+    "vue-monnify": "^1.0.1",
+    "vue-print-nb": "^1.7.5",
+    "vue-tel-input-vuetify": "^1.5.3",
+    "vue3-print-nb": "^0.1.4",
+    "vuetify": "^3.1.7"
+  },
+  "overrides": {
+    "vue": "latest"
+  }
+}
