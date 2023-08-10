@@ -3,7 +3,7 @@
         <v-card elevation="5" class="mx-auto pa-10 mt-2">
             <v-avatar style="display: flex; top: -30px; margin: 0 auto;" size="80">
 
-                <v-icon icon="mdi-access-point-network" color="success" size="100px"></v-icon>
+                <v-icon icon="mdi-cart-outline" color="success" size="100px"></v-icon>
             </v-avatar>
             <v-form ref="form" v-model="valid" lazy-validation enctype="multipart/form-data">
 

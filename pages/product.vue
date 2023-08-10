@@ -55,23 +55,20 @@ import { useConfigStore } from '~~/store/config'
 import { Product, useProductStore } from '~~/store/productsStore'
 import { useStockStore } from '~~/store/stocks'
 import { formatNumber } from '../composables/getFilters';
-definePageMeta({
-  middleware: [
-    function (to, from) {
+// definePageMeta({
+//   middleware: [
+//     function (to, from) {
+//       const permission = [
+//         "can_add_products", "can_view_products", "can_edit_products", "can_delete_products",
+//       ]
+//       if (!usePermissionStore().hasPermission(permission)) {
+//         useConfigStore().alert_msg = 'You dont have access to this page'
+//         return abortNavigation()
+//       }
+//     },
 
-
-      const permission = [
-        "can_add_products", "can_view_products", "can_edit_products", "can_delete_products",
-      ]
-
-      if (!usePermissionStore().hasPermission(permission)) {
-        useConfigStore().alert_msg = 'You dont have access to this page'
-        return abortNavigation()
-      }
-    },
-
-  ],
-});
+//   ],
+// });
 
 
 export default {

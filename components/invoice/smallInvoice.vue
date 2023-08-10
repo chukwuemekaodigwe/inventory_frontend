@@ -10,7 +10,7 @@
                     <v-btn color="error" size="x-small" class="text-right" icon="mdi-close"
               @click="close()"></v-btn>
 
-                    <v-btn color="black" size="x-small" class="text-right" icon="mdi-printer"
+                    <v-btn color="blue" size="x-small" class="text-right" icon="mdi-printer"
               v-print="'#inv'"></v-btn>
                 </div>
                 
@@ -25,7 +25,7 @@
 
                     <v-col cols="6">
                         <div class="">
-                            <img src="notpaid.png" alt="" class="rounded" style="width: 100px; float: right;">
+                            <img :src="company?.logo" alt="" class="rounded" style="width: 100px; float: right;">
                         </div>
 
                     </v-col>

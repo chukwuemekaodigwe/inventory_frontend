@@ -2,7 +2,7 @@
     <v-card class="mx-auto pa-10 mt-10" width="400">
         <v-avatar style="display: flex; top: -30px; margin: 0 auto;" size="80">
 
-            <img src="" alt="John">
+                <v-icon icon="mdi-cart-outline" color="violet-accent-4" size="100px"></v-icon>
 
         </v-avatar>
         <v-form v-model="formValidate">

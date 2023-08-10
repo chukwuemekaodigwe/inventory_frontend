@@ -140,7 +140,7 @@
 import { useSalesStore } from '~~/store/sales';
 import { useCustomerStore } from '../store/customers'
 import { useConfigStore } from '~~/store/config';
-import { config } from 'process';
+
 
 const { $api } = useNuxtApp()
 const salesStore = useSalesStore()

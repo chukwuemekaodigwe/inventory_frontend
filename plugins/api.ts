@@ -13,7 +13,8 @@ import { defineEventHandler, H3Event, parseCookies, setCookie } from 'h3'
 })
 
 export default defineNuxtPlugin( (nuxtApp) => {
-  const defaultUrl = "http://127.0.0.1:8000/";
+  const env = useRuntimeConfig()
+  const defaultUrl = env.public.ENV == 'prod' ? env.public.BACKEND_URL : env.public.LOCAL_URL
 
   // Request interceptor. Runs before your request reaches the server
   const onRequest = (config) => {

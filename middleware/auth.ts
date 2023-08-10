@@ -8,7 +8,7 @@ export default defineNuxtRouteMiddleware((to, from) => {
   const configStore = useConfigStore()
 //console.log(!configStore.user)
 
-  if (!configStore.user || !configStore.auth_token) {
+  if (!configStore.auth_token) {
     configStore.alert_msg = 'Please you need to login to accesss the page'
     return navigateTo('/login')
   }

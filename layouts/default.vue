@@ -153,6 +153,12 @@ async function logout() {
 
 }
 
+
+definePageMeta({
+    middleware: [
+'auth'
+]})
+
 function hasPermission(p) {
   return usePermissionStore().hasPermission(p)
 }

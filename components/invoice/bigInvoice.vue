@@ -3,14 +3,14 @@
                     <card-title class="text-caption my-2"> Invoice Template</card-title>
                     <v-row justify="center">
                         <v-col cols="6">
-                            <h3 class="text-tertiary">Digital Plazas Inc.</h3>
+                            <h3 class="text-tertiary">Company Name Inc.</h3>
                             <p>Address</p>
                             <p>City, State Country</p>
                         </v-col>
 
                         <v-col cols="6">
                             <div class="">
-                                <img src="notpaid.png" alt="" class="rounded" style="width: 100px; float: right;">
+                                <img src="" alt="logo" class="rounded" style="width: 100px; float: right;">
                             </div>
 
                         </v-col>

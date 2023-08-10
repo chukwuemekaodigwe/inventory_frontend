@@ -141,7 +141,8 @@ function submit() {
 }
 
 function processImage(ev) {
-    console.log(ev)
+    form.value.logo = ev
+    useConfigStore().company.logo = ev
 }
 
 onMounted(()=>{

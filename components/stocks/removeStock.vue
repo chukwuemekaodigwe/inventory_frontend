@@ -23,7 +23,9 @@
                       label="Product"> </v-textarea>
                   </v-col>
                   <v-col cols="6" md="6">
-                    <v-text-field variant="outlined" v-model="product.qty" :error-messages="(product.qty > stockQty(product.id)) ? `Quantity must be less than ${stockQty(product.id)}`" type="number" step="0.00001"
+                    <v-text-field variant="outlined" v-model="product.qty" 
+                    :error-messages="getError" 
+                    type="number" step="0.00001"
                       min="0" label="Quantity*" required></v-text-field>
                   </v-col>
                 </span>
@@ -83,6 +85,7 @@ const stock = reactive({
   removeReason: null,
 })
 
+const getError = computed(()=>(product.qty > stockQty(product.id)) ? `Quantity must be less than ${stockQty(product.id)}` : '')
 function stockQty(id:number){
   return stocksStore.getStockQty(id)
 }

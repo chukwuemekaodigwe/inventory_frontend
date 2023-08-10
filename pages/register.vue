@@ -9,7 +9,7 @@
       <v-slide-group v-model="tab2" class="d-flex justify-content-center ml-n2">
         <v-slide-group-item v-for="n, i in steps" :key="i" v-slot="{ isSelected, toggle }">
           <v-btn :prependIcon="n.icon" class="ma-2 font-weight-bold" variant="outlined" rounded
-            :color="isSelected ? 'success' : undefined" @click="change(i)">
+            :color="isSelected ? 'success' : undefined">
             {{ n.title }}
           </v-btn>
         </v-slide-group-item>

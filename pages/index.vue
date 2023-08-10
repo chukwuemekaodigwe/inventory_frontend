@@ -212,7 +212,7 @@
 
 <script setup>
 import { useConfigStore } from '~~/store/config';
-import Exp_incomeChart from './exp_incomeChart.vue';
+
 import { useNoticeStore } from '~~/store/notifications';
 import { useStockStore } from '~~/store/stocks';
 import {usePermissionStore } from '../store/permissions'

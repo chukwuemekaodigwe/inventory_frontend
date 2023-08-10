@@ -12,7 +12,6 @@
                     </v-btn>
                 </div>
             </v-card-title>
-
         </v-img>
 
         <v-form ref="productForm" enctype="multipart/form-data">
@@ -219,6 +218,10 @@ function close() {
     emit('close', true)
 }
 
+function processImage(e){
+    product.value.image  = e
+    profile.value = e
+}
 onBeforeUnmount(() => {
     close()
 })
@@ -228,4 +231,4 @@ onBeforeUnmount(() => {
 /* .v-text-field {
     margin-bottom: 0;
 } */
-</style>
+</style>    
